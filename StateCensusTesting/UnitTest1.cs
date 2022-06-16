@@ -19,8 +19,8 @@ namespace StateCensusTesting
             {
                 int expected = 29;
                 string filePath = @"C:\prasanna\prasanna bridgelabzs\StateCensusAnalyser\StateCensusAnalyser\StateCode.csv";
-                StateCensusAnalyser.Stateanalyser getMethod = new StateCensusAnalyser.Stateanalyser();
-                int actual = getMethod.AnalyseData(filePath);
+                StateCensusAnalyser.Stateanalyser data = new StateCensusAnalyser.Stateanalyser();
+                int actual = data.AnalyseData(filePath);
                 Assert.AreEqual(expected, actual);
             }
             catch (Exception ex)
@@ -35,8 +35,8 @@ namespace StateCensusTesting
             {
                 int expected = 29;
                 string filePath = @"D:\BridgeLabz\IndianStates-CensusAnalyser\IndianStates_Codes\StateCensusData.txt";
-                StateCensusAnalyser.Stateanalyser getMethod = new StateCensusAnalyser.Stateanalyser();
-                int actual = getMethod.AnalyseData(filePath);
+                StateCensusAnalyser.Stateanalyser example = new StateCensusAnalyser.Stateanalyser();
+                int actual = example.AnalyseData(filePath);
                 Assert.AreEqual(expected, actual);
             }
             catch (Exception ex)
@@ -51,8 +51,8 @@ namespace StateCensusTesting
             {
                 int expected = 29;
                 string filePath = @"C:\prasanna\prasanna bridgelabzs\StateCensusAnalyser\StateCensusAnalyser\InvalidDelimeterStateCensusData.csv";
-                StateCensusAnalyser.Stateanalyser getMethod = new StateCensusAnalyser.Stateanalyser();
-                int actual = getMethod.AnalyseData(filePath);
+                StateCensusAnalyser.Stateanalyser name = new StateCensusAnalyser.Stateanalyser();
+                int actual = name.AnalyseData(filePath);
                 Assert.AreEqual(expected, actual);
             }
             catch (Exception ex)
@@ -67,8 +67,8 @@ namespace StateCensusTesting
             {
                 int expected = 29;
                 string filePath = @"C:\prasanna\prasanna bridgelabzs\StateCensusAnalyser\StateCensusAnalyser\InvalidHeaderCensusData.csv";
-                StateCensusAnalyser.Stateanalyser getMethod = new StateCensusAnalyser.Stateanalyser();
-                int actual = getMethod.AnalyseData(filePath);
+                StateCensusAnalyser.Stateanalyser value = new StateCensusAnalyser.Stateanalyser();
+                int actual = value.AnalyseData(filePath);
                 Assert.AreEqual(expected, actual);
             }
             catch (Exception ex)

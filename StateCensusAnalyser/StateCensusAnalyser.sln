@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateCensusAnalyser", "StateCensusAnalyser.csproj", "{5E04B414-69E6-455C-B8A5-69DB09D8B7FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateCensusAnalyser", "StateCensusAnalyser.csproj", "{5E04B414-69E6-455C-B8A5-69DB09D8B7FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateCensusTesting", "..\StateCensusTesting\StateCensusTesting.csproj", "{4C7730D4-F134-42B0-9954-EA92951164FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5E04B414-69E6-455C-B8A5-69DB09D8B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E04B414-69E6-455C-B8A5-69DB09D8B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E04B414-69E6-455C-B8A5-69DB09D8B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7730D4-F134-42B0-9954-EA92951164FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7730D4-F134-42B0-9954-EA92951164FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7730D4-F134-42B0-9954-EA92951164FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7730D4-F134-42B0-9954-EA92951164FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

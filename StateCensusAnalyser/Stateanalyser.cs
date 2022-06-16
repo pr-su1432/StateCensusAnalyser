@@ -45,5 +45,21 @@ namespace StateCensusAnalyser
             }
             throw new CustomExceptions(CustomExceptions.ExceptionType.INVALID_FILE_TYPE, "Invalid File Type");
         }
+        public int StateCodeAnalyser(string fileofPath)
+        {
+            int numberOfRecords;
+            using (var reader = new StreamReader(fileofPath))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                var details = csv.GetRecords<StatesCode>().ToList();
+                numberOfRecords = details.Count();
+                foreach (var data in details)
+                {
+                    Console.WriteLine("SrNo: " + data.SrNo + "\nState: " + data.State + "\nName: " + data.Name
+                        + "\nTIN: " + data.TIN + "\nStateCode: " + data.StateCode + "\n");
+                }
+            }
+            return numberOfRecords;
+        }
     }
 }
